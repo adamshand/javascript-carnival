@@ -18,7 +18,7 @@ function clickedTheSquare(e) {
     soundEffect.play()
     setTimeout(function () {
       newRandomMole()
-    }, Math.floor(Math.random() * 3000))
+    }, Math.floor(Math.random() * 3000) + 700)
   }
 }
 
