@@ -11,8 +11,11 @@ for (let i = 0; i < squares.length; i++) {
 // Gentleman, start your moles …
 newRandomMole()
 
+// defining square globally means you can introspect in devtools console
+let square
 function clickedTheSquare(e) {
-  let square = e.target
+  square = e.target
+  //console.log(e.target.parentNode.parentNode.parentNode.children)
   if (square.src) {
     square.src = ''
     soundEffect.play()
