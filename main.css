@@ -17,7 +17,6 @@ table {
 }
 
 td {
-  background-color: BurlyWood;
   height: 75px;
   width: 75px;
 }
@@ -59,4 +58,16 @@ td {
 
 .shoes {
   z-index: 1
+}
+
+/* whack-a-mole */
+table.wam {
+  background-image: url("./whack-a-mole/grass2.jpg");
+}
+td.wam {
+  width: 11vw;
+  height: 11vw;
+}
+img.wam {
+  width: 11vw;
 }

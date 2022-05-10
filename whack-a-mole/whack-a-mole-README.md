@@ -1,5 +1,5 @@
-[Home](../README.md)|
----|
+| [Home](../README.md) |
+| -------------------- |
 
 # Whack-a-Mole
 
@@ -17,9 +17,9 @@ The Javascript Carnival has a mole problem! But it's the opposite problem to the
 
 #### Resources
 
-[HTML Tables](https://www.w3schools.com/html/html_tables.asp)\
-[Javascript Random](https://www.w3schools.com/js/js_random.asp)\
-[Javascript onClick() method](https://www.w3schools.com/jsref/event_onclick.asp)\
+[HTML Tables](https://www.w3schools.com/html/html_tables.asp)
+[Javascript Random](https://www.w3schools.com/js/js_random.asp)
+[Javascript onClick() method](https://www.w3schools.com/jsref/event_onclick.asp)
 [Playing audio with Javascript](https://www.developphp.com/lib/JavaScript/Audio)
 
 ## Whack! That! Mole!
