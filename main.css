@@ -68,8 +68,10 @@ td {
   top: 475px;
   left: 350px;
 }
-#pointer {
-  background-image: url('dress-the-clown/pointer.png');
+#saveButton {
+  position: relative;
+  top: 220px;
+  right: 250px;
 }
 
 /* whack-a-mole */

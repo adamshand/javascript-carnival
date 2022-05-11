@@ -1,7 +1,7 @@
 console.log('Dress The Clown!')
-
 const bodyAreas = ['head', 'body', 'shoes']
 let state = { focus: 1, head: 0, body: 0, shoes: 0 }
+let debug = false
 
 printState()
 
@@ -17,6 +17,17 @@ function checkKey(e) {
   } else if (e.keyCode == '39') {
     rightArrow()
   }
+}
+
+function saveClown() {
+  //html2canvas(document.getElementById('clown')).then((canvas) => {
+  let clown = document.getElementById('clown')
+  html2canvas(clown).then((canvas) => {
+    let a = document.createElement('a')
+    a.download = 'clown.png'
+    a.href = canvas.toDataURL('image/png')
+    a.click()
+  })
 }
 
 function dressClown() {
@@ -38,7 +49,8 @@ function moveArrow() {
 }
 
 function getBodyArea() {
-  return bodyAreas[Math.abs(state.focus) % 3]
+  //return bodyAreas[Math.abs(state.focus) % 3]
+  return bodyAreas[state.focus]
 }
 
 function getAreaItem(area) {
@@ -77,12 +89,10 @@ function rightArrow() {
 }
 
 function printState() {
-  console.log(`focus is ${getBodyArea()}[${getAreaItem(getBodyArea())}]`)
-  console.log(state)
-  //   console.log(`head  ${state.head}  \t abs(${Math.abs(state.head) % 6})
-  // body  ${state.body}  \t abs(${Math.abs(state.body) % 6})
-  // shoes ${state.shoes} \t abs(${Math.abs(state.shoes) % 6})
-  // ----`)
+  if (debug) {
+    console.log(`focus is ${getBodyArea()}[${getAreaItem(getBodyArea())}]`)
+    //console.log(state)
+  }
 }
 
 function randomNumber() {
