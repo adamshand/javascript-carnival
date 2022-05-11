@@ -53,9 +53,28 @@ td {
 #shoes {
   z-index: 1;
 }
+#headFocus {
+  position: relative;
+  top: 125px;
+  left: 350px;
+}
+#bodyFocus {
+  position: relative;
+  top: 250px;
+  left: 350px;
+}
+#shoesFocus {
+  position: relative;
+  top: 475px;
+  left: 350px;
+}
+#pointer {
+  background-image: url('dress-the-clown/pointer.png');
+}
+
 /* whack-a-mole */
 table.wam {
-  background-image: url("./whack-a-mole/grass2.jpg");
+  background-image: url('whack-a-mole/grass.jpg');
 }
 td.wam {
   width: 11vw;
